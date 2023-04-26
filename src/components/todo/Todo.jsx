@@ -121,11 +121,24 @@ function Todo() {
       });
   };
 
+
+  function ascSort() 
+  {
+    setTasks([...tasks].sort((a, b) => a.title > b.title ? -1 : 1));
+  }
+  
+  const csaSort = () =>
+  {
+    setTasks([...tasks].sort((a, b) => a.title < b.title ? -1 : 1));
+  }
+
   return (
     <Container>
     <Row>
     <NavBar />
     </Row>
+    <button type="button" onClick={ascSort}>sort a-z</button>
+    <button type="button" onClick={csaSort}>sort a-z</button>
       <Row className="justify-content-center m-3">
         <Col xs="6" sm="4" md="3">
           <Button variant="success" onClick={() => setIsAddTaskModalOpen(true)}>
@@ -204,5 +217,6 @@ function Todo() {
     </Container>
   );
 }
+
 
 export default Todo;

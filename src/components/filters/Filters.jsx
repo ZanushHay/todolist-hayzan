@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faRefresh } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
 import styles from "./filters.module.css";
+import Todo from "../todo/Todo";
 
 function Filters(props) {
   const [filters, setFilters] = useState({
@@ -19,6 +20,8 @@ function Filters(props) {
 const onStatusChange = (event)=>{
 console.log(event.target.value)
 };
+
+console.log(Todo.ascSort);
 
   return (
     <Accordion className="mb-4">
@@ -47,6 +50,8 @@ console.log(event.target.value)
         </Accordion.Header>
         <Accordion.Body>
           <Container fluid={true}>
+          <button type="button" onClick={Todo.ascSort}>sort a-z</button>
+          <button type="button" onClick={Todo.csaSort}>sort a-z</button>
             <Row>
               <Col sm={6} md={4} lg={3} className="text-center">
                 <fieldset className={styles.filterItem}>

@@ -9,7 +9,7 @@ import { faSearch, faFilter, faRefresh } from "@fortawesome/free-solid-svg-icons
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar bg="light" expand="sm" style={{opacity: .8}}>
       <Container fluid>
         <Navbar.Brand href="#">Todo</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -1,5 +1,10 @@
 main{
   max-width: 1440px;
   margin: 0 auto;
-  background-color: alicebluegit;
-}git
+  background-color: radial-gradient(circle, rgba(243,244,241,1) 0%, rgba(231,232,229,1) 100%);
+  background-image: url("./img/bgtd.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+}
