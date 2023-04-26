@@ -159,7 +159,7 @@ function Todo() {
       <Row>
       <Filters />
       </Row>
-      <Row>
+      <Row >
         {tasks.map((task) => {
           return (
             <Task
