@@ -63,6 +63,24 @@ function Todo() {
       });
   };
 
+    function toggleTaskCompleted(id) {
+      const updatedTasks = tasks.map((task) => {
+        // if this task has the same ID as the edited task
+        if (id === task.id) {
+          // use object spread to make a new obkect
+          // whose `completed` prop has been inverted
+          return { ...task, completed: !task.completed };
+        }
+        return task;
+      });
+      setTasks(updatedTasks);
+    }
+  
+  
+  
+
+
+  
   const onTaskSelect = (taskId) => {
     const selectedTasksCopy = new Set(selectedTasks);
     if (selectedTasksCopy.has(taskId)) {
