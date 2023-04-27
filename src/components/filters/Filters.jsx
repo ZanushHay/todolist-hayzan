@@ -50,8 +50,6 @@ console.log(Todo.ascSort);
         </Accordion.Header>
         <Accordion.Body>
           <Container fluid={true}>
-          <button type="button" onClick={Todo.ascSort}>sort a-z</button>
-          <button type="button" onClick={Todo.csaSort}>sort a-z</button>
             <Row>
               <Col sm={6} md={4} lg={3} className="text-center">
                 <fieldset className={styles.filterItem}>
