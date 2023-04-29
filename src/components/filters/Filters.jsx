@@ -7,7 +7,7 @@ import styles from "./filters.module.css";
 import Todo from "../todo/Todo";
 
 function Filters(props) {
-  const [filters, setFilters] = useState({
+  const [] = useState({
     search: "",
     status: "",
     create_lte: "",
